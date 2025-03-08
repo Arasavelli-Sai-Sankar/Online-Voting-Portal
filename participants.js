@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!userId) {
         alert("User ID not found. Please log in again.");
-        window.location.href = "shankar.html";
+        window.location.href = "index.html";
         return;
     }
     document.getElementById("logoutBtn").addEventListener("click", function () {
         localStorage.removeItem("token"); // Remove authentication token
         alert("Logged out successfully!");
-        window.location.href = "shankar.html"; // Redirect to login page
+        window.location.href = "index.html"; // Redirect to login page
       });
       
     document.getElementById("registerParticipant").addEventListener("click", registerParticipant);
