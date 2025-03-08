@@ -146,3 +146,12 @@ header
 {
     color:#333;
 }
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+  
