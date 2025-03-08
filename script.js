@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!userId) {
         alert("User ID not found. Please log in again.");
-        window.location.href = "shankar.html"; // Redirect if not logged in
+        window.location.href = "index.html"; // Redirect if not logged in
         return;
     }
     // Add event listener for logout button
     document.getElementById("logoutBtn").addEventListener("click", function () {
         alert("Logged out successfully!");
-        window.location.href = "shankar.html"; // Redirects to login page
+        window.location.href = "index.html"; // Redirects to login page
     });
 
     if (userType === "participant") {
@@ -37,7 +37,7 @@ function registerParticipant() {
     document.getElementById("logoutBtn").addEventListener("click", function () {
         localStorage.clear(); // ✅ Clears all stored user data
         alert("Logged out successfully!");
-        window.location.href = "shankar.html"; // Redirects to login page
+        window.location.href = "index.html"; // Redirects to login page
     });
     const newParticipant = { id: participants.length + 1, name: participantName, votes: 0 };
     participants.push(newParticipant);
